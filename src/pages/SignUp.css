@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'RozhaOne';
+  src: url('../assets/RozhaOne-Regular.ttf') format('truetype'); 
+}
+
+.signup {
+  background-color: #AC637C;
+  background-image: url('../assets/signup-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signup-container {
+  background: rgba(255, 255, 255, 0);
+  width: 400px;
+  padding: 0px;
+  border-radius: 20px;
+  margin-top: 90px;
+  margin-left: 250px;
+  text-align: start;
+}
+
+.signup-title {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: -10px;
+  font-family: 'RozhaOne';
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: start;
+}
+
+.signup-label {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 2px solid #D17B99;
+  background: #FFE0EB;
+  color: #AC637C;
+  font-size: 16px;
+}
+
+.signup-input:focus {
+  outline: none;
+  border-color: #f7c6d0;
+}
+
+.signup-btn {
+  margin-top: 20px;
+  background: white;
+  color: #D17B99;
+  border: none;
+  padding: 5px;
+  width: 170px;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'RozhaOne';
+}
+
+.signup-btn:hover {
+  background: #AC637C;
+}
+
+.signup-footer {
+  margin-top: 20px;
+  color: #444;
+}
+
+.signup-link {
+  color: #D17B99;
+  cursor: pointer;
+  font-weight: bold;
+}

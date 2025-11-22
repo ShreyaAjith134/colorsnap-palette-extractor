@@ -1,0 +1,164 @@
+/*Palette.css*/
+@font-face {
+  font-family: 'RozhaOne';
+  src: url('../assets/RozhaOne-Regular.ttf') format('truetype'); 
+}
+
+.palette {
+  background-color: #AC637C;
+  background-image: url('../assets/Palette-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.palette h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'RozhaOne', sans-serif;
+}
+
+.palette-content {
+  display: flex;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-section{
+  width: 385px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  min-width: 340px;
+}
+.colors-section{
+  width: 385px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  min-width: 340px; /* Add this to make the right section wider */
+  margin-left: -52px;
+}
+
+.image-section h2, .colors-section h2 {
+  font-size: 30px;
+  font-family: 'RozhaOne', sans-serif;
+  margin-bottom: 20px;
+}
+
+.uploaded-image {
+  width: 300px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* This will crop the image to fit */
+  border-radius: 10px;
+  display: block;
+  margin-left: 40px;
+  margin-top: -10px
+}
+
+.color-palette {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Input box styles */
+.input-group {
+  margin-bottom: 25px;
+}
+
+.input-group h2 {
+  font-size: 30px;
+  font-family: 'RozhaOne', sans-serif;
+  margin-bottom: 3px;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.input-box {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: #FFD1E1;
+  color: #AC6374;
+  font-family: 'Poppins', sans-serif;
+  margin-left: -10px;
+  max-width: 340px;
+}
+
+.input-box::placeholder {
+  color: #AC6374;
+  opacity: 0.7;
+}
+
+.input-box:focus {
+  outline: none;
+  border-color: #f7c6d0;
+  background: #FFD1E1;
+}
+.save-button-container {
+  margin-top: 20px;
+  margin-left: -20px;
+  text-align: center
+}
+
+.save-btn {
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  background: white;
+  color: #D17B99;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'RozhaOne', sans-serif;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.save-btn:hover {
+  background: #f7c6d0;
+  color: white;
+}
+
+.color-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13px;
+margin-top: 15px;
+  overflow: hidden;
+}
+
+.color-box {
+  width: 50px;
+  height: 125px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: transform 0.2s ease;
+  
+}
+
+.color-box:hover {
+  transform: scale(1.05);
+}
+
+.color-box span {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  display: inline-block;
+}

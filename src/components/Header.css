@@ -1,0 +1,123 @@
+/*header.css*/
+@font-face {
+  font-family: 'RozhaOne';
+  src: url('../assets/RozhaOne-Regular.ttf') format('truetype'); 
+}
+
+.header {
+  width: 100%;
+  background-color: #d17b99; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* --- updated this part --- */
+.logo-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  z-index: 1;
+}
+
+.logo-section img.logo {
+  height: 70px;
+  z-index: 1;
+}
+
+/* --- dropdown icon next to logo --- */
+.dropdown-icon {
+  width: 28px;
+  cursor: pointer;
+  margin-left: 45px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-icon.rotate {
+  transform: rotate(180deg);
+}
+
+/* --- dropdown menu below the logo+icon --- */
+.dropdown-menu {
+  position: absolute;
+  top: 80px; /* aligns below logo */
+  left: 0;
+  background-color: #FFD1E1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  list-style: none;
+  padding: 8px 0;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #AC637C;
+  display: block;
+  padding: 10px 15px;
+  font-size: 20px;
+  transition: background 0.2s;
+  font-family: 'RozhaOne', sans-serif;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: 'RozhaOne', sans-serif;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  
+}
+
+.btn:hover {
+  color: #f7c6d0;
+}
+
+.btn.primary {
+  background: white;
+  color: #D17B99;
+}
+
+.btn.primary:hover {
+  background: #f7c6d0;
+  color: white;
+}

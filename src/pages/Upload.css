@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'RozhaOne';
+  src: url('../assets/RozhaOne-Regular.ttf') format('truetype'); 
+}
+
+.upload {
+  background-color: #AC637C;
+  background-image: url('../assets/Upload-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.upload h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  font-family: 'RozhaOne', sans-serif;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  color: white;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.file-icon {
+  height: 70px;
+}
+
+.upload h2 {
+  font-size: 30px;
+  margin: 0; /* Remove the left margin since we're using flex gap */
+  font-family: 'RozhaOne', sans-serif;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.supported-formats {
+  font-size: 1rem;
+  opacity: 0.6;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.file-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.file-info p {
+  margin: 5px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: 'RozhaOne', sans-serif;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  color: #f7c6d0;
+}
+
+.btn.primary {
+  background: white;
+  color: #D17B99;
+  font-weight: bold;
+}
+
+.btn.primary:hover {
+  background: #f7c6d0;
+  color: white;
+}

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'RozhaOne';
+  src: url('../assets/RozhaOne-Regular.ttf') format('truetype'); 
+}
+
+.home {
+  background-color: #AC637C;
+  height: 100vh;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-splash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0px;
+}
+
+.main-splash-img {
+  width: 1275px;
+  height: 600px;
+}
+
+.home h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  width: 100%;
+  font-family: 'RozhaOne', sans-serif;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: 'RozhaOne', sans-serif;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.btn:hover {
+  color: #f7c6d0;
+}
+
+.btn.primary {
+  background: white;
+  color: #D17B99;
+  font-weight: bold;
+}
+
+.btn.primary:hover {
+  background: #f7c6d0;
+  color: white;
+}
